@@ -161,7 +161,7 @@
 .app-workspace-tasks-bar-header {
     background-color: rgba(53, 66, 89, 1);
     display: flex;
-    height: 90%;
+    height: 95%;
     width: 100%;
     border-radius: 13px;
     justify-content: space-around;
@@ -205,8 +205,40 @@
     border-radius: 10px 10px 0px 0px;
     margin: 10px 0px 0px;
 }
+
+.background-app-workspace-tasks-bar-footer{
+    background-color: rgba(68, 160, 160, 1);
+    border-radius: 0px 0px 13px 13px;
+    flex-grow: 2;
+}
+
 .app-workspace-tasks-bar-footer {
     background-color: rgba(53, 66, 89, 1);
-    flex-grow: 1;
-    border-radius: 0px 0px 10px 10px;  
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 13px 13px;
+}
+
+.active-btn{
+    font-family: 'Open Sans';
+    font-weight: 800; 
+    font-size: 20px;
+    color: rgba(68, 160, 160, 1);
+}
+
+.all-btn{
+    color:rgba(246, 246, 246, 1);
+    font-family: 'Open Sans';
+    font-weight: 800; 
+    font-size: 20px;
+    margin: 0px 21px 0px 21px;
+}
+
+.completed-btn{
+    color: rgba(68, 160, 160, 1);
+    font-family: 'Open Sans';
+    font-weight: 800; 
+    font-size: 20px;
 }
