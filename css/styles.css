@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -23,6 +24,9 @@
 
 .header-text{
     color: rgba(233, 197, 151, 1);
+    font-family: 'Open Sans';
+    font-weight:800;
+    font-size: 32px;
 }
 
 .app-workspace {
@@ -32,10 +36,11 @@
     align-items: center;
     width: 70vw;
     height: 70vh;
+    font-family: 'Open Sans';
 }
 
 .background-app-workspace-categories-bar{
-    background-color: white;
+    background-color: rgba(68, 160, 160, 1);
     display: flex;
     flex-grow: 1;
     height: 100%;
@@ -55,9 +60,12 @@
 .title{
     color: rgba(255, 255, 255, 1);
     display: flex;
-    flex-grow: 1;
+    flex-grow: 2;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .category{
@@ -72,8 +80,12 @@
 .Comlited{
     background-color: rgba(76, 175, 80, 1);
     border-radius: 10px;
-    margin: 0px 25px 5px 25px;
+    margin: 10px 25px 5px 25px;
     cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: white
 }
 
 .Urgent{
@@ -81,6 +93,10 @@
     border-radius: 10px;
     margin: 0px 25px 5px 25px;
     cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: white
 }
 
 .Important{
@@ -88,6 +104,10 @@
     border-radius: 10px;
     margin: 0px 25px 5px 25px;
     cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: white
 }
 
 .Later{
@@ -95,6 +115,10 @@
     border-radius: 10px;
     margin: 0px 25px 5px 25px;
     cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: white
 }
 
 .To-study{
@@ -102,13 +126,21 @@
     border-radius: 10px;
     margin: 0px 25px 5px 25px;
     cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    color: white
 }
 
 .add-category-batton{
     background-color: rgba(68, 160, 160, 1);
-    margin: 0px 55px 25px 55px;
-    border-radius: 20px;
+    margin: 0px 50px 25px 50px;
+    border-radius: 10px;
     cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 20px;
+    color: white
 }
 
 .app-workspace-tasks-bar {
@@ -121,7 +153,7 @@
 }
 
 .background-color-app-workspace-tasks-bar-header{
-    background-color: white;
+    background-color: rgba(68, 160, 160, 1);
     flex-grow: 1;
     border-radius: 13px;
 }
@@ -132,14 +164,39 @@
     height: 90%;
     width: 100%;
     border-radius: 13px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
+.tasks-text{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(68, 160, 160, 1);
+    flex-grow: 1;
+    margin: 0px 0px 0px 20px;
+}
+
 .add-new-task{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 20px;
+    flex-grow: 2;
     background-color: rgba(68, 160, 160, 1);
     border-radius: 10px;
+    height: 70%;
     cursor: pointer;
+    margin: 0px 50px 0px 150px;
+    color: white
+}
+
+.clear-completed-text{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(68, 160, 160, 1);
+    flex-grow: 0;
+    margin: 0px 20px 0px 0px;
 }
 
 .app-workspace-tasks-bar-body {
