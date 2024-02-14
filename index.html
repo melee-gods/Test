@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -18,67 +18,65 @@
         </header>
 
         <main class="app-workspace">
-            <div class="background-app-workspace-categories-bar">
-                <section class="app-workspace-categories-bar">
-                    <div class="title">
-                        <p>Categories</p> 
-                    </div>
-                        <div class="category">
-                            <button class="Comlited-button" type="button"><p>Comlited</p></button>
-                            <button class="Urgent-button" type="button"><p>Urgent</p></button>
-                            <button class="Important-button" type="button"><p>Important</p></button>
-                            <button class="Later-button" type="button"><p>Later</p></button>
-                            <button class="To-study-button" type="button"><p>To study</p></button>
-                        </div> 
-                        
-                    <button type="button" class="add-category-batton">
-                    <p> Add category</p>
-                    </button>
+            <section class="app-workspace-categories-bar surface" >
+                <div class="title">
+                   <div class="left-line"></div>
+                    <p>Categories</p> 
+                     <div class="right-line"></div>  
+                </div>
+                    <div class="category">
+                        <button class="Comlited-button" type="button"><p>Comlited</p></button>
+                        <button class="Urgent-button" type="button"><p>Urgent</p></button>
+                        <button class="Important-button" type="button"><p>Important</p></button>
+                        <button class="Later-button" type="button"><p>Later</p></button>
+                        <button class="To-study-button" type="button"><p>To study</p></button>
+                    </div> 
                     
-                </section>
-            </div>
+                <button type="button" class="add-category-batton">
+                    <p> Add category</p>
+                </button>
+            </section>
             <section class="app-workspace-tasks-bar">
-              <div class="background-color-app-workspace-tasks-bar-header">
-                <div class="app-workspace-tasks-bar-header"> 
+                <div class="app-workspace-tasks-bar-header surface"> 
                     <p class="tasks-text">5 tasks</p> 
                     <button class="add-new-task" type="button">Add new task</button> 
                     <p class="clear-completed-text">Clear completed</p>
                 </div>
-              </div>
-                <div class="app-workspace-tasks-bar-body"> 
-                    <div class="Task-1">
-                        <input class="check-completed" type="checkbox" />
-                        <p>Memorize the fifty states and their capitals</p>
-                        <div></div>
+                <div class="app-workspace-tasks-bar-body surface"> 
+                    <div class="app-workspace-task-list">
+                        <div class="task">
+                            <input class="check-completed" type="checkbox" />
+                            <p>Memorize the fifty states and their capitals</p>
+                            <button class="Comlited-button" type="button"><p>Comlited</p></button>
+                        </div>
+                        <div class="task">
+                            <input class="check-completed" type="checkbox" />
+                            <p>Memorize the fifty states and their capitals</p>
+                            <button class="Comlited-button" type="button"><p>Comlited</p></button>
+                        </div>
+                        <div class="task">
+                            <input class="check-completed" type="checkbox" />
+                            <p>Memorize the fifty states and their capitals</p>
+                            <button class="Comlited-button" type="button"><p>Comlited</p></button>
+                        </div>
+                        <div class="task">
+                            <input class="check-completed" type="checkbox" />
+                            <p>Memorize the fifty states and their capitals</p>
+                            <button class="Comlited-button" type="button"><p>Comlited</p></button>
+                        </div>
+                        <div class="task">
+                            <input class="check-completed" type="checkbox" />
+                            <p>Memorize the fifty states and their capitals</p>
+                            <button class="Comlited-button" type="button"><p>Comlited</p></button>
+                        </div>
                     </div>
-                    <div class="Task-2">
-                        <input class="check-completed" type="checkbox" />
-                        <p>Memorize the fifty states and their capitals</p>
-                        <div></div>
-                    </div>
-                    <div class="Task-3">
-                        <input class="check-completed" type="checkbox" />
-                        <p>Memorize the fifty states and their capitals</p>
-                        <div></div>
-                    </div>
-                    <div class="Task-4">
-                        <input class="check-completed" type="checkbox" />
-                        <p>Memorize the fifty states and their capitals</p>
-                        <div></div>
-                    </div>
-                    <div class="Task-5">
-                        <input class="check-completed" type="checkbox" />
-                        <p>Memorize the fifty states and their capitals</p>
-                        <div></div>
+
+                    <div class="app-workspace-tasks-bar-footer"> 
+                        <p class="active-btn">Active</p> 
+                        <p class="all-btn">All</p>
+                        <p class="completed-btn">Completed</p>
                     </div>
                 </div>
-               <div class="background-app-workspace-tasks-bar-footer">     
-                    <div class="app-workspace-tasks-bar-footer"> 
-                       <p class="active-btn">Active</p> 
-                       <p class="all-btn">All</p>
-                       <p class="completed-btn">Completed</p>
-                    </div>
-              </div>  
             </section>
         </main>
     </div>
