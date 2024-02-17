@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -14,7 +14,9 @@
 <body>
     <div class="app-container">
         <header class="app-header">
-            <p class="header-text">PERSONAL TASK MANAGER</p>
+            <p class="header-text">PERSONAL </p>
+            <p class="header-text">TASK MANAGER</p>
+
         </header>
 
         <main class="app-workspace">
@@ -30,11 +32,10 @@
                         <button class="Important-button" type="button"><p>Important</p></button>
                         <button class="Later-button" type="button"><p>Later</p></button>
                         <button class="To-study-button" type="button"><p>To study</p></button>
-                    </div> 
-                    
-                <button type="button" class="add-category-batton">
-                    <p> Add category</p>
-                </button>
+                    </div>
+                    <footer class="add-category">
+                    <button type="button" class="add-category-batton">Add category</button>
+                    </footer>
             </section>
             <section class="app-workspace-tasks-bar">
                 <div class="app-workspace-tasks-bar-header surface"> 
@@ -43,7 +44,7 @@
                     <p class="clear-completed-text">Clear completed</p>
                 </div>
                 <div class="app-workspace-tasks-bar-body surface"> 
-                    <div class="app-workspace-task-list">
+                    <nav class="app-workspace-task-list">
                         <div class="task">
                             <input class="check-completed" type="checkbox" />
                             <p>Memorize the fifty states and their capitals</p>
@@ -69,7 +70,7 @@
                             <p>Memorize the fifty states and their capitals</p>
                             <button class="Comlited-button" type="button"><p>Comlited</p></button>
                         </div>
-                    </div>
+                    </nav>
 
                     <div class="app-workspace-tasks-bar-footer"> 
                         <p class="active-btn">Active</p> 
