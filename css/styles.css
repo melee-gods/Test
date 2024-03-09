@@ -7,7 +7,7 @@
 
 .app-container {
     height: 100vh;
-    background-color: rgba(28, 39, 60, 1);
+    background-color: #1c273c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .app-header {
-    background-color:rgba(28, 39, 60, 1);
+    background-color:#1c273c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,13 +24,13 @@
 }
 
 .header-text{
-    color: rgba(233, 197, 151, 1);
+    color: #e9c597;
     font-family: 'Open Sans';
     font-weight:800;
     font-size: 32px;
 }
 .app-workspace {
-    background-color: rgba(28, 39, 60, 1);
+    background-color: #1c273c;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -39,9 +39,18 @@
 }
 
 .surface {
-    background-color: rgba(53, 66, 89, 1);
+    background-color: #354259;
     border-radius: 13px;
-    box-shadow: 0px 3px rgba(68, 160, 160, 1);
+    box-shadow: 0px 3px #44a0a0;
+}
+
+.category-face{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: white
 }
 
 .app-workspace-categories-bar {
@@ -52,7 +61,7 @@
 
 .left-line{
     background-color: #F6F6F6;
-    flex-grow: 1;
+    flex-grow: 1;/*Без них тут никак*/
     height: 1px;
 }
 
@@ -74,7 +83,7 @@
 .right-line{
     background-color: #F6F6F6;
     height: 1px;
-    flex-grow: 1;
+    flex-grow: 1;/*Без них тут никак*/
     border: 1px;
 }
 
@@ -82,66 +91,35 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-grow: 5;
+    flex-grow: 5;/*Для чего ставил?*/
     gap: 7px;
     padding: 6px 25px 0px 25px;
 }
 
-.Comlited-button{
-    background-color: rgba(76, 175, 80, 1);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Open Sans';
+.comlited-button{
+    background-color: #4caf50;
     font-weight: 400;
-    font-size: 20px;
-    color: white
 }
 
-.Urgent-button{
-    background-color: rgba(255, 82, 82, 1);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Open Sans';
+.urgent-button{
+    background-color: #ff5252;
     font-weight: 400;
-    font-size: 20px;
-    color: white
 }
 
-.Important-button{
-    background-color: rgba(255, 193, 7, 1);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Open Sans';
+.important-button{
+    background-color: #ffc107;
     font-weight: 400;
-    font-size: 20px;
-    color: white
+}
+.later-button{
+    background-color: #9c27b0;
+    font-weight: 400;
 }
 
-.Later-button{
-    background-color: rgba(156, 39, 176, 1);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Open Sans';
+.to-study-button{
+    background-color: #26a7b8;
     font-weight: 400;
-    font-size: 20px;
-    color: white
 }
-
-.To-study-button{
-    background-color: rgba(38, 167, 184, 1);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 20px;
-    color: white
-}
-
+    
 .add-category{
     display: flex;
     justify-content: center;
@@ -149,19 +127,13 @@
 }
 
 .add-category-batton{
-    background-color: rgba(68, 160, 160, 1);
+    background-color: #44a0a0;
     padding: 6.2px 13px 5.17px 13px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Open Sans';
     font-weight: 800;
-    font-size: 20px;
-    color: white
 }
 
 .app-workspace-tasks-bar {
-    background-color:rgba(28, 39, 60, 1);
+    background-color:#1c273c;
     display: flex;
     flex-direction: column;
     flex-grow: 2;
@@ -182,36 +154,36 @@
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 20px;
-    color: rgba(68, 160, 160, 1);
+    color: #44a0a0;
     padding: 0px 50px 0px 10px;
 }
 
 .add-new-task{
-    font-family: 'Open Sans';
     font-weight: 800;
-    font-size: 20px;
     padding: 0px 30px 0px 30px;
-    background-color: rgba(68, 160, 160, 1);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white
+    background-color: #44a0a0;
 }
 
 .clear-completed-text{
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 20px;
-    color: rgba(68, 160, 160, 1);
+    cursor: pointer;
+    color: #44a0a0;
     padding: 0px 10px 0px 20px;
 }
 
+.clear-completed-text:hover{
+    color: aqua;
+}
+
 .app-workspace-tasks-bar-body {
-    background-color: rgba(53, 66, 89, 1);
+    background-color: #354259;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
+    /*для чего ставил*/
     flex-grow: 5;
 }
 
@@ -268,20 +240,35 @@
     font-family: 'Open Sans';
     font-weight: 800; 
     font-size: 20px;
-    color: rgba(68, 160, 160, 1);
+    cursor: pointer;
+    color: #44a0a0;
+}
+
+.active-btn:hover{
+    color: #F6F6F6;
 }
 
 .all-btn{
-    color:rgba(246, 246, 246, 1);
+    color:#f6f6f6;
     font-family: 'Open Sans';
     font-weight: 800; 
     font-size: 20px;
+    cursor: pointer;
     margin: 0px 21px 0px 21px;
 }
 
+.all-btn:hover{
+    color: blue;
+}
+
 .completed-btn{
-    color: rgba(68, 160, 160, 1);
+    color: #44a0a0;
     font-family: 'Open Sans';
     font-weight: 800; 
     font-size: 20px;
+    cursor: pointer;
+}
+
+.completed-btn:hover{
+    color: red;
 }
