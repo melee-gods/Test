@@ -213,22 +213,43 @@
     padding: 0px 20px 0px 20px;
 }
 
-.check-completed{ 
-    width: 1.3em;
-    height: 1.3em;
-    background-color: white;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 1px solid #ddd;
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
-
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
 }
 
-.check-completed:checked{
-    background-color: #008000;
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 2px solid #4CAF50;
+    border-radius: 15px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/check-completed.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+}
+
+.real-checkbox:checked~.custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .app-workspace-tasks-bar-footer {
